@@ -1,0 +1,30 @@
+<!-- Services Section -->
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card" onclick="showServiceDetails('wedding')">
+            <i class="fas fa-music"></i>
+            <h3>Wedding DJ</h3>
+            <p>Make your special day unforgettable with our curated playlists and seamless transitions.</p>
+        </div>
+        <div class="service-card" onclick="showServiceDetails('corporate')">
+            <i class="fas fa-microphone"></i>
+            <h3>Corporate Events</h3>
+            <p>Elevate your corporate events with professional sound and lighting solutions.</p>
+        </div>
+        <div class="service-card" onclick="showServiceDetails('private')">
+            <i class="fas fa-glass-cheers"></i>
+            <h3>Private Parties</h3>
+            <p>From birthdays to anniversaries, we bring the party to life.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Details Modal -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+    </div>
+</div>
